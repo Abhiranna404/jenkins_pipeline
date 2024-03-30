@@ -1,0 +1,28 @@
+>>>>>>>>>>>>> Jenkins Pipeline file stages <<<<<<<<<<<<<<<<<<<<
+
+1) specify the work agent
+2) Environment
+3) Now define the stages
+4) Within the stages create the stage and then steps in the stage
+5) also define the post build actions
+
+
+For example:
+
+1st stage >> Checkout
+step - clone the git repository
+step2 - define the branch
+step3 - define the url of the repo and extension and clean the repo before checkout.
+
+2nd stage >> Build
+step - write a script to do build step
+
+3rd stage >> Test
+step - write a script to test.
+
+4th stage >> Deploy
+step - declare the ENV variable value
+
+5th stage >> Post build action
+step - if success
+step2 - if failure
